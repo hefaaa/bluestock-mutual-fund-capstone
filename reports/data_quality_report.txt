@@ -1,18 +1,25 @@
-DATA QUALITY REPORT
+DAY 1 DATA QUALITY REPORT
 
-Files Loaded: 10
+Datasets Loaded: 10
 
-01_fund_master.csv
-Rows: 40
+Summary:
+- All datasets loaded successfully
+- No duplicate records found
+- No critical missing values found
 
-02_nav_history.csv
-Rows: 46000
+Observations:
+1. monthly_sip_inflows.csv contains 12 missing values in yoy_growth_pct.
+   Reason:
+   First 12 months have no prior-year data available for YoY calculation.
 
 AMFI Validation:
-40/40 codes found
+- 40 schemes present in fund_master
+- NAV history dataset contains scheme NAV records
+- Referential integrity check pending in notebook
 
-Missing Values:
-None significant
+NAV API:
+- Successfully fetched live NAV data from mfapi.in
+- HDFC Top 100 Direct NAV data saved successfully
 
-Status:
+Overall Status:
 PASS

@@ -1,0 +1,18 @@
+DATA QUALITY REPORT
+
+Files Loaded: 10
+
+01_fund_master.csv
+Rows: 40
+
+02_nav_history.csv
+Rows: 46000
+
+AMFI Validation:
+40/40 codes found
+
+Missing Values:
+None significant
+
+Status:
+PASS
